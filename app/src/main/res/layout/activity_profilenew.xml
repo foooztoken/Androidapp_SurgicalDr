@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBE6E0"
+    tools:context=".Profile.Profile">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#800000"
+        app:title="Profile"
+        app:titleTextColor="#ffffff"
+
+        android:theme="@style/Theme.AppCompat" >
+        <Button
+            android:background="@mipmap/hometwo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            />
+        <Button
+            android:background="@mipmap/refresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:id="@+id/refresh"
+            android:layout_gravity="right"
+            />
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_below="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/cardtwo"
+    android:layout_marginTop="5dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+    android:id="@+id/s"
+        android:layout_centerHorizontal="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@mipmap/s"/>
+    <TextView
+android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:id="@+id/nametext"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+       android:layout_below="@+id/s"
+        android:textColor="#000000"
+
+
+
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/card"
+        android:background="@drawable/white"
+        android:visibility="gone"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/info"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="User Information"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/id"
+            android:layout_below="@+id/user"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/d"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+android:text="Id:"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:id="@+id/idtext"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="#000000"
+
+
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/n"
+            android:layout_below="@+id/id"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:id="@+id/d"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Name:"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/na"
+            android:layout_below="@+id/n"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:id="@+id/d"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Email:"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:id="@+id/emailtext"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="#000000"
+
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/dd"
+            android:layout_below="@+id/na"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:id="@+id/d"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Phone:"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:id="@+id/phonetext"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="#000000"
+
+
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/cardtwo"
+        android:textSize="20dp"
+        android:id="@+id/images"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Images"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:id="@+id/recycleimages"
+        android:layout_below="@+id/images"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/review"
+        android:text="Review Service"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/recycleimages"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+      android:layout_below="@+id/review"
+        android:textSize="20dp"
+        android:id="@+id/rev"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Reviews"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:id="@+id/recycle"
+        android:layout_below="@+id/rev"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</RelativeLayout></RelativeLayout></ScrollView>
+
+
+</RelativeLayout>

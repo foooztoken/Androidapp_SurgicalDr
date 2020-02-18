@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DBE6E0"
+    android:layout_height="match_parent"
+    tools:context=".FindJobs.JobsList">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#800000"
+        app:title="Find Jobs"
+        app:titleTextColor="#ffffff"
+
+        app:theme="@style/ToolbarTheme" >
+
+        <Button
+            android:background="@mipmap/filter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home"
+         android:layout_margin="5dp"
+            android:layout_gravity="right"
+            />
+        <Button
+android:layout_margin="5dp"
+            android:background="@mipmap/refresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/refresh"
+            android:layout_gravity="right"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycle"
+        android:layout_below="@+id/header"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:id="@+id/frame"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="250dp"
+        android:layout_height="320dp"></FrameLayout>
+
+</RelativeLayout>

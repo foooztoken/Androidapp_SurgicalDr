@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DBE6E0"
+    android:layout_height="match_parent"
+    tools:context=".UserModule.Main">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#800000"
+        app:title="Pick a Hospital"
+        app:titleTextColor="#ffffff"
+
+        android:theme="@style/Theme.AppCompat" >
+        <Button
+            android:background="@mipmap/hometwo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home"
+            android:layout_gravity="right"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:background="@drawable/white"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/d"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Pick a Hospital"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <Button
+
+            android:layout_width="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:id="@+id/open"
+            android:layout_marginTop="100dp"
+
+            android:textColor="#000000"
+            android:text="Open Projects"
+            android:background="@drawable/open"/>
+        <Button
+            android:layout_marginTop="40dp"
+android:layout_below="@+id/open"
+            android:textColor="#000000"
+            android:id="@+id/close"
+             android:layout_width="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:text="Close Projects"
+            android:background="@drawable/close"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

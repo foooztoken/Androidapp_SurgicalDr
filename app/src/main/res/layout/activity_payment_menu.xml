@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DBE6E0"
+    android:layout_height="match_parent"
+    tools:context=".JobDetail">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#800000"
+        app:title="Payment Mode"
+        app:titleTextColor="#ffffff"
+
+        android:theme="@style/Theme.AppCompat" >
+        <Button
+            android:background="@mipmap/hometwo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home"
+            android:layout_gravity="right"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:background="@drawable/white"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/mode"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Payment Mode"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+<Button
+    android:layout_marginTop="40dp"
+    android:layout_width="180dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="30dp"
+    android:id="@+id/bank"
+    android:layout_below="@+id/paypal"
+    android:text="Bank Transfer"
+    android:background="@drawable/extra"/>
+        <Button
+            android:id="@+id/paypal"
+            android:layout_marginTop="100dp"
+            android:layout_width="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:text="Payment"
+            android:background="@drawable/extra"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

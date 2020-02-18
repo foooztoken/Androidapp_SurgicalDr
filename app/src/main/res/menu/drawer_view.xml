@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Profile" />
+        <item
+
+            android:id="@+id/completedorders"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Completed Orders"/>
+        <item
+            android:id="@+id/allorders"
+            android:icon="@mipmap/ic_launcher"
+            android:title="All Orders" />
+        <item
+            android:id="@+id/performance"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Performance"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@mipmap/ic_launcher"
+            android:title="About" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Logout" />
+    </group>
+
+</menu>

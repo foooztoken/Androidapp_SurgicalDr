@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lab.pak.com.app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SurrgicalDr"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".ProviderModule.ChangeLanguage"></activity>
+        <activity android:name=".AllConversation.ConversationActivity" />
+        <activity android:name=".ProviderModule.RateService" />
+        <activity android:name=".ProviderModule.Pickhospital" />
+        <activity android:name=".BidsModule.Recommendations" />
+        <activity android:name=".MyJobsUser.MenuUseer" />
+        <activity android:name=".MyJobsProvider.MenuProvider" />
+        <activity android:name=".Payment.BankTransfer" />
+        <activity android:name=".Payment.PaymentMenu" >
+
+
+
+        </activity>
+        <activity android:name=".BidsOrder.Bidshistoryorder" />
+        <activity android:name=".FindJobs.JobsList" />
+        <activity android:name=".Review.ReviewActivity" />
+        <activity android:name=".Notifications.Notifications" />
+        <activity android:name=".MyJobsProvider.ProviderRequests" />
+        <activity android:name=".UserModule.BidAcceptProvider" />
+        <activity android:name=".UploadMessage" />
+        <activity android:name=".PostJob.PostJob" />
+        <activity android:name=".GeneralAdapters.CompleteOrdersProvider" />
+        <activity android:name=".GeneralAdapters.CompleteOrdersUser" />
+        <activity android:name=".BidsModule.BidDetails" />
+        <activity android:name=".BidsModule.BidHistory" />
+        <activity android:name=".BidsModule.Mybids" />
+        <activity android:name=".MyJobsUser.JobDetailNew" />
+        <activity android:name=".MyJobsProvider.JobDetailUserNew" />
+        <activity android:name=".BidsOrder.BidDetailsOrder" />
+        <activity android:name=".Profile.PictureDetail" />
+        <activity android:name=".Profile.ProfileFeedback" />
+
+        <service android:name=".Notifications.NotificationService" />
+
+        <activity android:name=".BidsOrder.BidAcitivity" />
+        <activity android:name=".Profile.Profile" />
+        <activity android:name=".ProviderModule.ProviderMain" />
+        <activity android:name=".MyJobsProvider.PostRequest" />
+        <activity android:name=".UserModule.About" />
+        <activity android:name=".UserModule.Faq" />
+        <activity android:name=".MyJobsUser.MyJobsUser" />
+        <activity android:name=".MyJobsProvider.Myjobs" />
+        <activity android:name=".UserModule.Contactus" />
+        <activity android:name=".JobDetail" />
+        <activity android:name=".MyJobsUser.JobDetailUser" />
+        <activity android:name=".Signup" />
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".MyJobsUser.JobDetailProvider" />
+        <activity android:name=".UserModule.Main" />
+        <activity android:name=".ProviderModule.Aboutprovider" />
+        <activity android:name=".BidsOrder.MybidsOrder" />
+        <activity android:name=".ProviderModule.Contactusprovider" />
+        <activity android:name=".ProviderModule.Faqprovider" />
+        <activity android:name=".UserModule.SignupUser" />
+        <activity android:name=".Payment.PaymentDetails" />
+        <activity android:name=".UserModule.ConversationBidsUser" />
+        <activity android:name=".Notificatio"></activity>
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

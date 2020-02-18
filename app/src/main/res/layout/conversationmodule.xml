@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/white"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:id="@+id/title"
+    android:text="Ali"
+    android:textSize="17dp"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:layout_margin="5dp"
+    android:layout_height="22dp" />
+    <TextView
+
+        android:textColor="#000000"
+        android:id="@+id/message"
+        android:textSize="17dp"
+      android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_margin="5dp"
+        android:text="s"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/message"
+        android:id="@+id/time"
+        android:text="ss"
+
+        android:layout_height="wrap_content" />
+</RelativeLayout>

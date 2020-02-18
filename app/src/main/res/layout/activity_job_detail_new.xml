@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#800000"
+        app:title="Orders"
+        app:titleTextColor="#ffffff"
+
+        android:theme="@style/Theme.AppCompat" >
+        <Button
+            android:visibility="gone"
+            android:background="@mipmap/hometwo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            />
+        <Button
+            android:visibility="gone"
+            android:background="@mipmap/refresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:id="@+id/refresh"
+            android:layout_gravity="right"
+            />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_below="@+id/header"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".MyJobsUser.JobDetailNew">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:id="@+id/budget"
+    android:layout_below="@+id/header"
+    android:textSize="17dp"
+    android:text="Budget:$1000"
+android:textStyle="bold"
+    android:layout_margin="20dp"
+    android:layout_alignParentRight="true"
+    android:textColor="#FF4500"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/stat"
+
+        android:textSize="17dp"
+        android:text="Status:"
+        android:layout_margin="18dp"
+android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/statustextt"
+        android:layout_below="@+id/header"
+        android:textSize="15dp"
+android:text="started"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+android:layout_toRightOf="@+id/stat"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/sta"
+android:layout_below="@+id/statustextt"
+        android:textSize="17dp"
+        android:text="Age:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/age"
+
+        android:textSize="15dp"
+        android:text="started"
+        android:layout_below="@+id/statustextt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/st"
+        android:layout_below="@+id/age"
+        android:textSize="17dp"
+        android:text="Blood Group:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/bloodgroup"
+
+        android:textSize="15dp"
+        android:text="started"
+        android:layout_below="@+id/age"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/md"
+        android:layout_below="@+id/bloodgroup"
+        android:textSize="17dp"
+        android:text="MedicationTaken:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/medicationtaken"
+
+        android:textSize="15dp"
+        android:text="started"
+        android:layout_below="@+id/bloodgroup"
+
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/md"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/m"
+        android:layout_below="@+id/medicationtaken"
+        android:textSize="17dp"
+        android:text="History:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/history"
+
+        android:textSize="15dp"
+        android:text="started"
+        android:layout_below="@+id/medicationtaken"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/m"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/ma"
+        android:layout_below="@+id/history"
+        android:textSize="17dp"
+        android:text="Chronic Disease:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/chronicdisease"
+
+        android:textSize="15dp"
+        android:text="started"
+        android:layout_below="@+id/history"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/mfattachment"
+        android:layout_below="@+id/chronicdisease"
+        android:textSize="17dp"
+        android:text="AttachmentURL:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/attachment"
+
+        android:textSize="15dp"
+        android:text="Please Check"
+        android:layout_below="@+id/chronicdisease"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/des"
+        android:layout_below="@+id/attachment"
+        android:textSize="17dp"
+android:text="Description:"
+ android:textStyle="bold"
+        android:layout_margin="18dp"
+
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/des"
+        android:textSize="15dp"
+        android:text="Description:"
+android:layout_marginTop="2dp"
+        android:layout_marginLeft="18dp"
+
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/roomtype"
+        android:layout_below="@+id/description"
+        android:textSize="17dp"
+        android:text="Roomtype:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/roomtypename"
+
+        android:textSize="15dp"
+        android:text="Room Type"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:id="@+id/bloodtransfer"
+        android:layout_below="@+id/roomtypename"
+        android:textSize="17dp"
+        android:text="Blood Transfer:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/bloodtransfername"
+        android:visibility="invisible"
+        android:textSize="15dp"
+        android:text="bloodtransfer"
+        android:layout_below="@+id/roomtypename"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:id="@+id/nodays"
+        android:layout_below="@+id/bloodtransfername"
+        android:textSize="17dp"
+        android:text="No of Days:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/nodaysname"
+        android:visibility="invisible"
+        android:textSize="15dp"
+        android:text="Nodays"
+        android:layout_below="@+id/bloodtransfername"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:id="@+id/icu"
+        android:layout_below="@+id/nodaysname"
+        android:textSize="17dp"
+        android:text="Icu Include:"
+        android:layout_margin="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/icuname"
+android:visibility="invisible"
+        android:textSize="15dp"
+        android:text="no"
+        android:layout_below="@+id/nodaysname"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/sta"
+        android:textColor="#0000FF"
+        android:layout_height="wrap_content" />
+<Button
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/extra"
+    android:text="Leave a Feedback"
+    android:id="@+id/clearorder"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/roomtypename"
+    android:layout_width="150dp"
+    android:layout_height="40dp"  />
+<TextView
+    android:layout_margin="5dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/clearorder"
+    android:layout_width="wrap_content"
+    android:textSize="20dp"
+    android:textColor="#000000"
+    android:text="My Bids:"
+    android:id="@+id/mybids"
+    android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycle"
+
+        android:layout_below="@+id/mybids"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout></ScrollView></RelativeLayout>
+</RelativeLayout>
